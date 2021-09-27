@@ -1,3 +1,3 @@
 # jokenpo
 
-![App](images/app.png)
+![App](./images/app.png)
