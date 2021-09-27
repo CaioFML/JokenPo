@@ -17,7 +17,7 @@ class _JogoState extends State<Jogo> {
       body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(top: 32, bottom: 16),
               child: Text(
                 "Escolha do App",
@@ -28,8 +28,11 @@ class _JogoState extends State<Jogo> {
                 )
               )
             ),
-            Image.asset("images/papel.png"),
-            Padding(
+            GestureDetector(
+              onTap: () { print("Imagem clicada!"); },
+              child: Image.asset("images/papel.png")
+            ),
+            const Padding(
                 padding: EdgeInsets.only(top: 32, bottom: 16),
                 child: Text(
                     "Escolha uma opção abaixo",
